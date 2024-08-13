@@ -1,0 +1,50 @@
+.container{
+    margin-top: 100px;
+    padding-right: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: orange;
+}
+label{
+    bottom: 20px;
+   justify-content: right;
+}
+
+input[type="text"],
+input[type="date"] {
+width:400px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    bottom: 20px;
+    margin-bottom:15px;
+}
+
+form button {
+   width: 400px; 
+    color: white;
+    background-color: orange;
+    font-weight: 400;
+    padding: 10px 0px; 
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top:10px;
+
+}
+
+form button:hover {
+    background-color: darkorange;
+}

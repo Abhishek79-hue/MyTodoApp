@@ -1,0 +1,54 @@
+h1 {
+    color: orange;
+    text-align: center; 
+  }
+  
+
+  .todo-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+  }
+  
+  .list-Wrap {
+    width: 600px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 25px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin-bottom: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-Wrap {
+    text-transform: capitalize;
+    font-size: 18px;  
+
+  }
+  .submit-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color:orange;
+    color: white;
+    position: fixed;
+    top:90%;
+    left:60%;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .submit-button:hover {
+    background-color:orange;
+  }
+  .btn{
+    padding:5px;
+  }
