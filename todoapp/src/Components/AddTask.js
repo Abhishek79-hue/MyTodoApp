@@ -38,7 +38,6 @@ const handleUpdate=async(e)=>{
       task_name:"",
       date:""
     }));
-   
     alert("Task sucessfully Updated")
    navigate("/")
   } catch (error) {
