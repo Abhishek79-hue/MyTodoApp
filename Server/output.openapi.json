@@ -1,0 +1,86 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "MY todo app",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:1100/",
+      "description": "Local sever"
+    }
+  ],
+  "tags": [
+    {
+      "name": "task",
+      "description": "Add task"
+    }
+  ],
+  "paths": {
+    "/api/task": {
+      "post": {
+        "tags": [
+          "task"
+        ],
+        "summary": "add task",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/task"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "add task successfully"
+          }
+        }
+      }
+    },
+    "api/test": {
+      "post": {
+        "tags": [
+          "task"
+        ],
+        "summary": "add task",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/task"
+              }
+            }
+          }
+        },
+        "responses": {
+          "default": {
+            "description": "add task successfully"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "task": {
+        "type": "object",
+        "properties": {
+          "task_name": {
+            "description": "enter task",
+            "type": "string"
+          },
+          "date": {
+            "description": "enter date",
+            "type": "string"
+          },
+          "status": {
+            "description": "enter task",
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}
